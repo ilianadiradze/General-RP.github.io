@@ -1,0 +1,776 @@
+<!DOCTYPE html><html lang="ka"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRANDGAMES.GE - ქართული SA-MP სერვერი</title>
+    
+    <link rel="stylesheet" href="css/bpg-arial-caps.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        main {
+            font-family: "BPG Arial Caps", sans-serif !important;
+        }
+        header {
+            font-family: "BPG Arial Caps", sans-serif !important;
+        }
+        .download-btn {
+            font-family: "BPG Arial Caps", sans-serif !important;
+        }
+        .loading-screen {
+            font-family: "BPG Arial Caps", sans-serif !important;
+        }
+    </style>
+
+  
+
+</head>
+<body>
+    <!-- Skip to Content Link for Accessibility -->
+    <a href="#main-content" class="skip-link">გადახტომა მთავარ შინაარსზე</a>
+    
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-logo">
+            <img src="images/logo.svg" alt="GrandRP.ge" style="height: 60px; width: auto;">
+        </div>
+        <div class="loading-bar-container">
+            <div class="loading-bar" id="loadingBar" style="width: 37.6458%;"></div>
+        </div>
+        <div class="loading-text" id="loadingText">იტვირთება...</div>
+    </div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" id="scrollProgress" style="width: 0%;"></div>
+
+    <!-- Particles Container -->
+    <div class="particles-container" id="particlesContainer"></div>
+
+    <!-- Cursor Trail -->
+    <div class="cursor-trail" id="cursorTrail" style="left: -10px; top: -10px;"></div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Header -->
+    <header role="banner">
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo" aria-label="Grand RP Georgia Homepage">
+                    <img src="images/logo.svg" alt="Grand RP Georgia Logo" class="logo-img">
+                </a>
+                <nav class="nav-menu" role="navigation" aria-label="Main navigation">
+                    <ul>
+                        <li><a href="#how-to-start" aria-label="შეიტყვეთ როგორ დაიწყოთ თამაში">როგორ დავიწყოთ თამაში?</a></li>
+                        <li><a href="#launcher" aria-label="ჩამოტვირთეთ თამაშის ლაუნჩერი">ლაუნჩერი</a></li>
+                        <li><a href="https://forum.grandgames.ge/index.php" target="_blank" aria-label="ეწვიეთ ფორუმს">ფორუმი</a></li>
+                        <li><a href="https://discord.gg/CFGPYUQv" target="_blank" aria-label="ეწვიეთ დისქორდს">დისქორდი</a></li>
+
+                    </ul>
+                </nav>
+                
+                <div class="header-actions">
+                    <a href="#" class="header-btn primary" aria-label="მომხმარებლის პანელი">მომხმარებლის პანელი</a>
+                    <button class="mobile-menu-toggle" aria-label="მობილური მენიუს გადართვა" aria-expanded="false">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+
+    </div>
+
+    <!-- Hero Section -->
+    <main id="main-content">
+
+    <section class="hero">
+        <video id="background-video" class="hero-video" autoplay="" muted="" loop="" playsinline="" webkit-playsinline="">
+            <source src="media/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-content">
+          
+            
+            <h1 class="hero-title">
+                <span class="title-line-1">მოგესალმებით</span>
+                <span class="title-line-2">GRAND <span class="highlight">ROLE PLAY</span>-ზე</span>
+            </h1>
+        
+       
+        </div>
+    </section>
+
+    <div class="container">
+
+    <!-- How to Start Section -->
+    <section id="how-to-start">
+        <h2 class="section-title scroll-animate animate-in">როგორ დავიწყოთ თამაში?</h2>
+        
+        <div class="steps-container">
+            <div class="step-card scroll-animate animate-in">
+                <div class="step-number">1</div>
+                <div class="step-icon">
+                    <i class="fas fa-download"></i>
+                </div>
+                <h3>ჩამოტვირთეთ ლაუნჩერი</h3>
+                <p>ჩამოტვირთეთ და დააინსტალირეთ ჩვენი უახლესი ლაუნჩერი</p>
+            </div>
+            
+            <div class="step-card scroll-animate animate-in">
+                <div class="step-number">2</div>
+                <div class="step-icon">
+                    <i class="fas fa-server"></i>
+                </div>
+                <h3>შემოგვიერთდით სერვერზე</h3>
+                <p>შემოგვიერთდით სერვერზე, შექმენით ახალი პერსონაჟი და დაიწყეთ თამაში</p>
+            </div>
+            
+            <div class="step-card scroll-animate animate-in">
+                <div class="step-number">3</div>
+                <div class="step-icon">
+                    <i class="fas fa-gamepad"></i>
+                </div>
+                <h3>დაიწყეთ როლური თამაში</h3>
+                <p>თქვენ იხილავთ სამყაროს, სადაც თითოეული ქმედება მნიშვნელოვანია</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Launcher Download Section -->
+    <section id="launcher">
+        <div class="launcher-container">
+            <div class="launcher-content">
+                <div class="launcher-text scroll-animate-scale">
+                    <h2>ლაუნჩერის ჩამოტვირთვა</h2>
+                    <p>ჩვენი ლაუნჩერი ხელმისაწვდომია სრულიად უფასოდ<br>WINDOWS ოპერაციული სისტემისთვის</p>
+                    
+                    <div class="system-requirements">                 
+                        <h3>სისტემური მოთხოვნები</h3> 
+                        
+                        <div class="platform-tabs">
+                            <button class="platform-tab active" data-platform="windows">
+                                <i class="fab fa-windows"></i> Windows
+                            </button>
+                            <button class="platform-tab" data-platform="android">
+                                <i class="fab fa-android"></i> Android
+                            </button>
+                        </div>
+                        
+                        <div class="requirements-content">
+                            <div class="requirement-item">
+                                <span class="req-label">ოპერაციული სისტემა</span>
+                                <span class="req-value">Windows 10 (64 ბიტი)</span>
+                            </div>
+                            <div class="requirement-item">
+                                <span class="req-label">პროცესორი</span>
+                                <span class="req-value">Intel Core I3</span>
+                            </div>
+                            <div class="requirement-item">
+                                <span class="req-label">ოპერატიული მეხსიერება</span>
+                                <span class="req-value">4 GB მეხსიერება</span>
+                            </div>
+                            <div class="requirement-item">
+                                <span class="req-label">ვიდეო ბარათი</span>
+                                <span class="req-value">2 GB VRAM-დან</span>
+                            </div>
+                            <div class="requirement-item">
+                                <span class="req-label">დისკის სივრცე</span>
+                                <span class="req-value">მაქსიმუმ 10 GB</span>
+                            </div>
+                        </div>
+                        
+                        <span style="color: red;">გაუშვით ინსტალატორი RUN AS ADMINISTRATOR-ით !</span>
+                        <a class="download-btn" href="./assets/GRANDRP_Installer.exe">
+                            <i class="fas fa-download"></i> ჩამოტვირთვა
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Server Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <h2 class="section-title scroll-animate">რატომ უნდა აგვირჩიოთ ჩვენ?</h2>
+            <p class="section-subtitle scroll-animate">გამოსცადეთ SA-MP-ში ყველაზე განვითარებული როლური თამაშის ფუნქციები</p>
+            
+            <div class="features-grid">
+                <div class="feature-card scroll-animate-left">
+                    <div class="feature-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>სამუშაოები</h3>
+                    <p>პოლიციელიდან ბიზნესმენამდე, აირჩიეთ 20-ზე მეტი რეალისტური კარიერული გზა.</p>
+                    <ul class="feature-list">
+                        <li>სამუშაოები დამწყებთათვის</li>
+                        <li>სამთავრობო დაწესებულებები</li>
+                        <li>კრიმინალური ორგანიზაციები</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card scroll-animate">
+                    <div class="feature-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>ავტომობილები</h3>
+                    <p>იმოძრავეთ ექსკლუზიური ავტომობილებით, რომლებიც შექმნილია ჩვენი სერვერისთვის.</p>
+                    <ul class="feature-list">
+                        <li>300+ დამატებული ავტომობილი</li>
+                        <li>ტუნინგის სისტემა</li>
+                        <li>ავტომობილებით ვაჭრობის სისტემა</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card scroll-animate-right">
+                    <div class="feature-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>ქონების სისტემა</h3>
+                    <p>იყიდეთ, გაყიდეთ, გაარემონტეთ ან ივაჭრეთ თქვენი უძრავი ქონებოთ.</p>
+                    <ul class="feature-list">
+                        <li>300+ ქონება ხელმისაწვდომია</li>
+                        <li>განსხვავებული ინტერიერები</li>
+                        <li>ექსტერიერის დეკორაციის სისტემა</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card scroll-animate-left">
+                    <div class="feature-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3>პერსონაჟის ვიზუალი</h3>
+                    <p>სკინი, აქსესუარი, თუ სხვა დაგეხმარებათ შექმნათ პერსონაჟის ვიზუალი.</p>
+                    <ul class="feature-list">
+                        <li>200+ ტანსაცმლის ნივთი</li>
+                        <li>ექსკლუზიური აქსესუარები</li>
+                        <li>პირადი სტილის სისტემა</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card scroll-animate">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>ფრაქციების სისტემა</h3>
+                    <p>შეუერთდით ორგანიზებულ ჯგუფებს უნიკალური ისტორიებით, რანგებითა და მიზნებით</p>
+                    <ul class="feature-list">
+                        <li>სამთავრობო ფრაქციები</li>
+                        <li>კრიმინალური ფრაქციები</li>
+                        <li>ლეგალური ბიზნესები</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card scroll-animate-right">
+                    <div class="feature-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>ივენთები</h3>
+                    <p>მიიღეთ მონაწილეობა ყოველდღიურ ივენთებში და ტურნირებში</p>
+                    <ul class="feature-list">
+                        <li>ყოველდღიური ივენთები</li>
+                        <li>წამახალისებელი გათამაშეები</li>
+                        <li>სეზონური ტურნირები</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="news" class="news-section">
+        <div class="container">
+            <h2 class="section-title scroll-animate">განახლებული სისტემები და ინტერფეისი</h2>
+            <p class="section-subtitle scroll-animate">მიიღეთ ინფორმაცია განახლებული სისტემების და ინტერფეისის შესახებ</p>
+            
+            <div class="news-grid">
+                <div class="news-card featured scroll-animate">
+                    <img src="images/inv.png" alt="Major Update" class="news-image">
+                    <div class="news-content">
+                        <h3>ახალი ინვენტარი და შოპინგის სისტემა</h3>
+                        <p>რევოლუციური ინვენტარის სისტემა. ყველაფერი, რასაც იყიდით ან გაცვლით სხვა მოთამაშესთან, დაემატება თქვენს ინვენტარში! სწრაფი წვდომა: ბრძანება /MAINMENU გამოყენებით გახსენით ინვენტარი.</p>
+                    </div>
+                    <img src="images/gunshop.png" alt="Major Update" class="news-image">
+
+                </div>
+                
+                <div class="news-card scroll-animate">
+                    <img src="images/register.png" alt="Racing Championship" class="news-image">
+                    <div class="news-content">
+                        <h3>ახალი რეგისტრაციის ინტერფეისი</h3>
+                        <p>ჩვენ გადავაკეთეთ რეგისტრაციის პროცესი, რათა სერვერთან დაკავშირება უფრო სწრაფი, მყიფე და მოსახერხებელი გავხადოთ!</p>
+                    </div>
+                </div>
+                
+                <div class="news-card scroll-animate">
+                    <img src="images/family.png" alt="New Properties" class="news-image">
+                    <div class="news-content">
+                        <h3>ოჯახის მართვის სისტემა</h3>
+                        <p>ექსკლუზიური ოჯახის და ასაბნიაკების სისტემა ახლა ხელმისაწვდომია ჩვენი შტატის ყველაზე პრესტიჟულ ადგილებში.</p>
+                    </div>
+                </div>
+                
+                <div class="news-card scroll-animate">
+                    <img src="images/metro.png" alt="Community Event" class="news-image">
+                    <div class="news-content">
+                        <h3>მეტროს სისტემა</h3>
+                        <p>მგზავრობა ახლა უფრო სწრაფი, უფრო უსაფრთხო და უფრო იმერსიული გახდა ახალი მიწისქვეშა მეტროსთან ერთად!</p>
+                    </div>
+                </div>
+
+                <div class="news-card scroll-animate">
+                    <img src="images/casino.png" alt="Community Event" class="news-image">
+                    <div class="news-content">
+                        <h3>კაზინოს სისტემა</h3>
+                        <p>სიახლე აზარტული მოთამაშეებისათვის! ჩვენი ახალი კაზინოს სისტემას აქვს საინტერესო თამაშები, როგორიცაა პოკერი, ბლექჯექი, ავიატორი, სხვ.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community">
+        <h2 class="section-title scroll-animate">გამოიწერეთ ჩვენი სოციალური ქსელები</h2>
+        
+        <div class="community-links">
+            <a href="#" class="community-card scroll-animate-left">
+                <div class="community-icon">
+                    <i class="fab fa-youtube"></i>
+                </div>
+                <h3>გამოიწერეთ და გვიყურეთ იუთუბზე</h3>
+                <p>ადმინისტრატორების POV პირდაპირ ეთერში</p>
+            </a>
+            
+            <a href="#" class="community-card scroll-animate">
+                <div class="community-icon">
+                    <i class="fab fa-discord"></i>
+                </div>
+                <h3>შეუერთდით ჩვენს დისქორდ სერვერს</h3>
+                <p>კომუნიკაცია მოთამაშეებთან და ადმინისტრატორებთან</p>
+            </a>
+            
+            <a href="#" class="community-card scroll-animate">
+                <div class="community-icon">
+                    <i class="fab fa-tiktok"></i>
+                </div>
+                <h3>უყურეთ ჩვენს პირდაპირ ეთერებს ტიკტოკზე</h3>
+                <p>გასართობი პირდაპირ ეთერები, ივენთები და სხვა</p>
+            </a>
+          
+        </div>
+    </section>
+
+    </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-content">
+ 
+            <div class="footer-bottom">
+                <img src="images/logo.svg" alt="GrandRP.ge" style="height: 32px; width: auto;">
+                <div class="footer-bottom-left">
+                    <span>© Grand Games © 2025</span>
+                </div>
+                <div class="age-rating">18+</div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple mobile menu toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        }
+
+        // Load video on page onload
+        window.addEventListener('load', function() {
+            const video = document.getElementById('background-video');
+            if (video) {
+                video.play().catch(error => {
+                    console.log('Auto-play prevented: ', error);
+                });
+            }
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            const scrollPosition = window.scrollY;
+            
+            if (scrollPosition > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Scroll animations
+        function initScrollAnimations() {
+            const animatedElements = document.querySelectorAll('.scroll-animate, .scroll-animate-left, .scroll-animate-right, .scroll-animate-scale, .scroll-animate-fade');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-in');
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+
+            animatedElements.forEach(element => {
+                observer.observe(element);
+            });
+        }
+
+        // Initialize scroll animations when page loads
+        window.addEventListener('load', function() {
+            initScrollAnimations();
+        });
+
+        // Loading Screen
+        function initLoadingScreen() {
+            const loadingScreen = document.getElementById('loadingScreen');
+            const loadingBar = document.getElementById('loadingBar');
+            const loadingText = document.getElementById('loadingText');
+            
+            let progress = 0;
+            const loadingMessages = [
+                'იტვირთება...',
+                'იტვირთება...',
+                'იტვირთება...',
+                'თითქმის მზადა...'
+            ];
+            
+            const interval = setInterval(() => {
+                progress += Math.random() * 15 + 5;
+                if (progress > 100) progress = 100;
+                
+                loadingBar.style.width = progress + '%';
+                
+                const messageIndex = Math.floor((progress / 100) * loadingMessages.length);
+                if (messageIndex < loadingMessages.length) {
+                    loadingText.textContent = loadingMessages[messageIndex];
+                }
+                
+                if (progress >= 100) {
+                    clearInterval(interval);
+                    setTimeout(() => {
+                        loadingScreen.classList.add('hidden');
+                        setTimeout(() => {
+                            loadingScreen.style.display = 'none';
+                        }, 500);
+                    }, 500);
+                }
+            }, 100);
+        }
+
+        // Mobile Menu Toggle
+        function initMobileMenu() {
+            const mobileToggle = document.querySelector('.mobile-menu-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            if (mobileToggle && navMenu) {
+                mobileToggle.addEventListener('click', () => {
+                    const isActive = mobileToggle.classList.toggle('active');
+                    navMenu.classList.toggle('active');
+                    
+                    // Update ARIA attributes for accessibility
+                    mobileToggle.setAttribute('aria-expanded', isActive);
+                });
+                
+                // Close menu when clicking on links
+                navMenu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileToggle.classList.remove('active');
+                        navMenu.classList.remove('active');
+                        mobileToggle.setAttribute('aria-expanded', 'false');
+                    });
+                });
+                
+                // Close menu on Escape key
+                document.addEventListener('keydown', (e) => {
+                    if (e.key === 'Escape' && mobileToggle.classList.contains('active')) {
+                        mobileToggle.classList.remove('active');
+                        navMenu.classList.remove('active');
+                        mobileToggle.setAttribute('aria-expanded', 'false');
+                    }
+                });
+            }
+        }
+
+        // Scroll Progress Indicator
+        function initScrollProgress() {
+            const progressBar = document.getElementById('scrollProgress');
+            if (!progressBar) {
+                return;
+            }
+
+            const updateProgress = () => {
+                const scrollTop = window.pageYOffset;
+                const docHeight = document.body.scrollHeight - window.innerHeight;
+                const scrollPercent = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+                progressBar.style.width = scrollPercent + '%';
+
+                if (scrollPercent > 0) {
+                    progressBar.classList.add('active');
+                } else {
+                    progressBar.classList.remove('active');
+                }
+            };
+            
+            window.addEventListener('scroll', updateProgress);
+            updateProgress();
+        }
+
+        // Back to Top Button
+        function initBackToTop() {
+            const backToTop = document.getElementById('backToTop');
+            
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 300) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            });
+            
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
+
+        // Parallax Effects
+        function initParallax() {
+            const parallaxElements = document.querySelectorAll('.parallax-element');
+            
+            window.addEventListener('scroll', () => {
+                const scrolled = window.pageYOffset;
+                
+                parallaxElements.forEach(element => {
+                    const rate = scrolled * -0.5;
+                    element.style.transform = `translateY(${rate}px)`;
+                });
+            });
+        }
+
+        // Cursor Trail Effect
+        function initCursorTrail() {
+            const cursorTrail = document.getElementById('cursorTrail');
+            let mouseX = 0, mouseY = 0;
+            let trailX = 0, trailY = 0;
+            
+            document.addEventListener('mousemove', (e) => {
+                mouseX = e.clientX;
+                mouseY = e.clientY;
+            });
+            
+            function animateTrail() {
+                trailX += (mouseX - trailX) * 0.1;
+                trailY += (mouseY - trailY) * 0.1;
+                
+                cursorTrail.style.left = trailX - 10 + 'px';
+                cursorTrail.style.top = trailY - 10 + 'px';
+                
+                requestAnimationFrame(animateTrail);
+            }
+            
+            animateTrail();
+        }
+
+        // Particle System
+        function initParticles() {
+            const container = document.getElementById('particlesContainer');
+            const particleCount = 50;
+            
+            for (let i = 0; i < particleCount; i++) {
+                createParticle();
+            }
+            
+            function createParticle() {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 6 + 's';
+                particle.style.animationDuration = (Math.random() * 3 + 3) + 's';
+                
+                container.appendChild(particle);
+                
+                setTimeout(() => {
+                    particle.remove();
+                    createParticle();
+                }, 6000);
+            }
+        }
+
+        // Button Loading States
+        function addButtonLoading(button) {
+            button.classList.add('btn-loading');
+            button.disabled = true;
+        }
+
+        function removeButtonLoading(button) {
+            button.classList.remove('btn-loading');
+            button.disabled = false;
+        }
+
+        // Enhanced Scroll Animations with Intersection Observer
+        function initEnhancedScrollAnimations() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-in');
+                        
+                        // Add staggered animation for child elements
+                        const children = entry.target.querySelectorAll('.scroll-animate');
+                        children.forEach((child, index) => {
+                            setTimeout(() => {
+                                child.classList.add('animate-in');
+                            }, index * 100);
+                        });
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all animated elements
+            document.querySelectorAll('.scroll-animate, .scroll-animate-left, .scroll-animate-right, .scroll-animate-scale, .scroll-animate-fade').forEach(el => {
+                observer.observe(el);
+            });
+        }
+
+        // Smooth Page Transitions
+        function initPageTransitions() {
+            const links = document.querySelectorAll('a[href^="#"]');
+            
+            links.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = link.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        }
+
+        // Enhanced Button Interactions
+        function initButtonInteractions() {
+            const buttons = document.querySelectorAll('.cta-primary, .cta-secondary, .download-btn');
+            
+            buttons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    // Add ripple effect
+                    const ripple = document.createElement('span');
+                    const rect = this.getBoundingClientRect();
+                    const size = Math.max(rect.width, rect.height);
+                    const x = e.clientX - rect.left - size / 2;
+                    const y = e.clientY - rect.top - size / 2;
+                    
+                    ripple.style.width = ripple.style.height = size + 'px';
+                    ripple.style.left = x + 'px';
+                    ripple.style.top = y + 'px';
+                    ripple.classList.add('ripple');
+                    
+                    this.appendChild(ripple);
+                    
+                    setTimeout(() => {
+                        ripple.remove();
+                    }, 600);
+                });
+            });
+        }
+
+        // Keyboard Navigation Enhancement
+        function initKeyboardNavigation() {
+            document.addEventListener('keydown', (e) => {
+                // Skip to main content with Tab
+                if (e.key === 'Tab' && !e.shiftKey) {
+                    const focusableElements = document.querySelectorAll(
+                        'a[href], button, input, textarea, select, [tabindex]:not([tabindex="-1"])'
+                    );
+                    
+                    // Ensure proper focus order
+                    focusableElements.forEach((el, index) => {
+                        el.setAttribute('tabindex', index + 1);
+                    });
+                }
+            });
+        }
+
+        // Ensure background video plays across devices
+        function ensureVideoPlays() {
+            const video = document.getElementById('background-video');
+            if (!video) {
+                return;
+            }
+
+            const attemptPlay = () => {
+                const playPromise = video.play();
+                if (playPromise !== undefined) {
+                    playPromise.catch(() => {
+                        const resumePlayback = () => {
+                            video.play().catch(() => {});
+                        };
+
+                        document.addEventListener('click', resumePlayback, { once: true });
+                        document.addEventListener('touchstart', resumePlayback, { once: true });
+                    });
+                }
+            };
+
+            // Mobile browsers require inline attributes
+            video.setAttribute('playsinline', '');
+            video.setAttribute('webkit-playsinline', '');
+
+            if (video.readyState >= 2) {
+                attemptPlay();
+            } else {
+                video.addEventListener('loadeddata', attemptPlay, { once: true });
+            }
+
+            attemptPlay();
+        }
+
+        // Initialize all features
+        document.addEventListener('DOMContentLoaded', function() {
+            initLoadingScreen();
+            initMobileMenu();
+            initCursorTrail();
+            initScrollProgress();
+            initPageTransitions();
+            initButtonInteractions();
+            initKeyboardNavigation();
+            ensureVideoPlays();
+        });
+    </script>
+
+</body></html>
